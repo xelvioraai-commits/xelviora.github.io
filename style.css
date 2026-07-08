@@ -1,6 +1,9 @@
-/* ===================================
-   XELVIORA FOUNDATION
-=================================== */
+/* ===================================================
+   XELVIORA - VERSION 1.0
+   Premium SaaS Landing Page
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 *{
     margin:0;
@@ -13,30 +16,30 @@ html{
 }
 
 body{
+
     font-family:'Inter',sans-serif;
     background:#050816;
     color:#ffffff;
     overflow-x:hidden;
+    line-height:1.6;
+
 }
 
 a{
+
     text-decoration:none;
+
 }
 
 ul{
+
     list-style:none;
+
 }
 
-img{
-    max-width:100%;
-}
-
-section{
-    padding:100px 8%;
-}
-/* ===================================
-   NAVIGATION
-=================================== */
+/* ======================================
+Navigation
+====================================== */
 
 .navbar{
 
@@ -50,7 +53,7 @@ section{
 
     width:90%;
 
-    max-width:1350px;
+    max-width:1400px;
 
     display:flex;
 
@@ -58,11 +61,11 @@ section{
 
     align-items:center;
 
-    padding:18px 35px;
+    padding:18px 40px;
 
     background:rgba(255,255,255,.05);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -125,5 +128,411 @@ section{
     background:#1D4ED8;
 
     transform:translateY(-2px);
+
+}
+
+/* ======================================
+Hero
+====================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 8%;
+
+    overflow:hidden;
+
+}
+
+.glow{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    background:#2563EB;
+
+    border-radius:50%;
+
+    filter:blur(220px);
+
+    opacity:.18;
+
+    top:-120px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.eyebrow{
+
+    color:#38BDF8;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.subtitle{
+
+    color:#94A3B8;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+.secondary-btn{
+
+    color:white;
+
+    border:1px solid #334155;
+
+    padding:18px 34px;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#111827;
+
+}
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:34px;
+
+    color:#38BDF8;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,10px);
+
+}
+
+}
+
+/* ======================================
+Solutions
+====================================== */
+
+.solutions{
+
+    padding:120px 8%;
+
+}
+
+.solutions h2{
+
+    text-align:center;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:48px;
+
+    margin-bottom:70px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#111827;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563EB;
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    font-family:'Space Grotesk',sans-serif;
+
+}
+
+.card p{
+
+    color:#94A3B8;
+
+}
+
+/* ======================================
+Industries
+====================================== */
+
+.industries{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+.industries h2{
+
+    font-size:46px;
+
+    margin-bottom:50px;
+
+    font-family:'Space Grotesk',sans-serif;
+
+}
+
+.industry-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.industry-list span{
+
+    background:#111827;
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ======================================
+Contact
+====================================== */
+
+.contact{
+
+    padding:120px 8%;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    font-family:'Space Grotesk',sans-serif;
+
+}
+
+.contact p{
+
+    color:#94A3B8;
+
+    margin-bottom:35px;
+
+}
+
+/* ======================================
+Footer
+====================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#94A3B8;
+
+}
+
+footer p:first-child{
+
+    margin-bottom:10px;
+
+}
+
+/* ======================================
+Responsive
+====================================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.btn{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.solutions h2,
+.industries h2,
+.contact h2{
+
+font-size:34px;
+
+}
 
 }
