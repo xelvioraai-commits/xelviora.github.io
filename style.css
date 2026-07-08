@@ -1,300 +1,36 @@
-/* ===========================
-XELVIORA v2.0
-=========================== */
+/* ===================================
+   XELVIORA FOUNDATION
+=================================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-
-background:#050816;
-color:white;
-font-family:Arial,sans-serif;
-overflow-x:hidden;
-
+    font-family:'Inter',sans-serif;
+    background:#050816;
+    color:#ffffff;
+    overflow-x:hidden;
 }
 
-/* Navigation */
-
-.navbar{
-
-position:fixed;
-
-top:20px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-width:90%;
-
-max-width:1400px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 40px;
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(20px);
-
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:18px;
-
-z-index:999;
-
+a{
+    text-decoration:none;
 }
 
-.logo{
-
-font-size:30px;
-
-font-weight:bold;
-
-letter-spacing:2px;
-
+ul{
+    list-style:none;
 }
 
-.nav-links{
-
-display:flex;
-
-gap:35px;
-
-list-style:none;
-
+img{
+    max-width:100%;
 }
 
-.nav-links a{
-
-color:#CBD5E1;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-color:#38BDF8;
-
-}
-
-.btn{
-
-background:#2563EB;
-
-padding:14px 24px;
-
-border-radius:12px;
-
-text-decoration:none;
-
-color:white;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-transform:translateY(-3px);
-
-}
-
-/* Hero */
-
-.hero{
-
-position:relative;
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:120px 30px;
-
-overflow:hidden;
-
-}
-
-.hero-content{
-
-max-width:900px;
-
-position:relative;
-
-z-index:2;
-
-}
-
-.eyebrow{
-
-color:#38BDF8;
-
-font-size:14px;
-
-letter-spacing:3px;
-
-margin-bottom:25px;
-
-}
-
-.hero h1{
-
-font-size:78px;
-
-line-height:1.05;
-
-margin-bottom:30px;
-
-}
-
-.subtitle{
-
-font-size:22px;
-
-line-height:1.8;
-
-color:#94A3B8;
-
-margin-bottom:45px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-}
-
-.primary-btn{
-
-background:#2563EB;
-
-padding:18px 32px;
-
-border-radius:14px;
-
-color:white;
-
-text-decoration:none;
-
-}
-
-.secondary-btn{
-
-padding:18px 32px;
-
-border:1px solid #334155;
-
-border-radius:14px;
-
-color:white;
-
-text-decoration:none;
-
-}
-
-.glow{
-
-position:absolute;
-
-width:700px;
-
-height:700px;
-
-background:#2563EB;
-
-filter:blur(220px);
-
-opacity:.18;
-
-border-radius:50%;
-
-top:-120px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-}
-
-.scroll-indicator{
-
-position:absolute;
-
-bottom:35px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-font-size:32px;
-
-color:#38BDF8;
-
-animation:bounce 2s infinite;
-
-}
-
-@keyframes bounce{
-
-0%,100%{
-
-transform:translate(-50%,0);
-
-}
-
-50%{
-
-transform:translate(-50%,12px);
-
-}
-
-}
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:46px;
-
-}
-
-.nav-links{
-
-display:none;
-
-}
-
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
+section{
+    padding:100px 8%;
 }
