@@ -19,3 +19,16 @@ document.querySelectorAll('section').forEach(s=>{
 if(s.id!=='hero'){s.classList.add('hidden');obs.observe(s);}
 });
 });
+/* ==========================================
+   Mouse Spotlight
+========================================== */
+
+const glow = document.querySelector(".mouse-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+    glow.style.left = e.clientX + "px";
+
+    glow.style.top = e.clientY + "px";
+
+});
