@@ -1,106 +1,117 @@
-/* =========================
-   XELVIORA WEBSITE v1.0
-========================= */
+/* ===========================
+XELVIORA v2.0
+=========================== */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#030712;
-    color:#F8FAFC;
-    font-family:Arial, sans-serif;
+
+background:#050816;
+color:white;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+
 }
 
 /* Navigation */
 
 .navbar{
 
-    display:flex;
+position:fixed;
 
-    justify-content:space-between;
+top:20px;
 
-    align-items:center;
+left:50%;
 
-    padding:22px 8%;
+transform:translateX(-50%);
 
-    position:fixed;
+width:90%;
 
-    top:0;
+max-width:1400px;
 
-    width:100%;
+display:flex;
 
-    background:rgba(3,7,18,.85);
+justify-content:space-between;
 
-    backdrop-filter:blur(12px);
+align-items:center;
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+padding:18px 40px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:18px;
+
+z-index:999;
 
 }
 
 .logo{
 
-    font-size:30px;
+font-size:30px;
 
-    font-weight:bold;
+font-weight:bold;
 
-    letter-spacing:2px;
+letter-spacing:2px;
 
 }
 
 .nav-links{
 
-    display:flex;
+display:flex;
 
-    list-style:none;
+gap:35px;
 
-    gap:35px;
+list-style:none;
 
 }
 
 .nav-links a{
 
-    color:#CBD5E1;
+color:#CBD5E1;
 
-    text-decoration:none;
+text-decoration:none;
 
-    transition:.3s;
+transition:.3s;
 
 }
 
 .nav-links a:hover{
 
-    color:#38BDF8;
+color:#38BDF8;
 
 }
 
 .btn{
 
-    background:#2563EB;
+background:#2563EB;
 
-    color:white;
+padding:14px 24px;
 
-    text-decoration:none;
+border-radius:12px;
 
-    padding:14px 24px;
+text-decoration:none;
 
-    border-radius:10px;
+color:white;
 
-    transition:.3s;
+transition:.3s;
 
 }
 
 .btn:hover{
 
-    background:#1D4ED8;
-
-    transform:translateY(-2px);
+transform:translateY(-3px);
 
 }
 
@@ -108,96 +119,182 @@ body{
 
 .hero{
 
-    min-height:100vh;
+position:relative;
 
-    display:flex;
+min-height:100vh;
 
-    justify-content:center;
+display:flex;
 
-    align-items:center;
+justify-content:center;
 
-    text-align:center;
+align-items:center;
 
-    padding:120px 8%;
+text-align:center;
+
+padding:120px 30px;
+
+overflow:hidden;
 
 }
 
 .hero-content{
 
-    max-width:900px;
+max-width:900px;
+
+position:relative;
+
+z-index:2;
 
 }
 
-.tagline{
+.eyebrow{
 
-    color:#38BDF8;
+color:#38BDF8;
 
-    text-transform:uppercase;
+font-size:14px;
 
-    letter-spacing:3px;
+letter-spacing:3px;
 
-    margin-bottom:20px;
-
-    font-weight:bold;
+margin-bottom:25px;
 
 }
 
 .hero h1{
 
-    font-size:64px;
+font-size:78px;
 
-    line-height:1.1;
+line-height:1.05;
 
-    margin-bottom:25px;
+margin-bottom:30px;
 
 }
 
 .subtitle{
 
-    color:#94A3B8;
+font-size:22px;
 
-    font-size:20px;
+line-height:1.8;
 
-    line-height:1.8;
+color:#94A3B8;
 
-    margin-bottom:40px;
+margin-bottom:45px;
 
 }
 
 .hero-buttons{
 
-    display:flex;
+display:flex;
 
-    justify-content:center;
+justify-content:center;
 
-    gap:20px;
+gap:20px;
 
 }
 
 .primary-btn{
 
-    background:#2563EB;
+background:#2563EB;
 
-    color:white;
+padding:18px 32px;
 
-    padding:16px 30px;
+border-radius:14px;
 
-    border-radius:12px;
+color:white;
 
-    text-decoration:none;
+text-decoration:none;
 
 }
 
 .secondary-btn{
 
-    border:1px solid #334155;
+padding:18px 32px;
 
-    color:white;
+border:1px solid #334155;
 
-    padding:16px 30px;
+border-radius:14px;
 
-    border-radius:12px;
+color:white;
 
-    text-decoration:none;
+text-decoration:none;
+
+}
+
+.glow{
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+background:#2563EB;
+
+filter:blur(220px);
+
+opacity:.18;
+
+border-radius:50%;
+
+top:-120px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.scroll-indicator{
+
+position:absolute;
+
+bottom:35px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:32px;
+
+color:#38BDF8;
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,12px);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
 
 }
