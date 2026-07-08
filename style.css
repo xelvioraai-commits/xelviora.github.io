@@ -8,3 +8,34 @@ body{margin:0;font-family:Arial,sans-serif;background:#050816;color:#fff}
 .show{opacity:1;transform:translateY(0)}
 .navbar-scrolled{background:#050816ee;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 section{padding:100px 8%}
+/* ==========================================
+   Mouse Spotlight
+========================================== */
+
+.mouse-glow{
+
+position:fixed;
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+background:radial-gradient(circle,
+rgba(56,189,248,.18) 0%,
+rgba(56,189,248,.08) 35%,
+transparent 70%);
+
+filter:blur(40px);
+
+transform:translate(-50%,-50%);
+
+z-index:0;
+
+transition:
+left .08s linear,
+top .08s linear;
+
+}
